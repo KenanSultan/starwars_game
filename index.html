@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Star Wars Game</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col fighters">
+                <div class="abs2"></div>
+                <div class="pic-div pics" data-name="obi">
+                    <img class="resim" src="./assets/images/obi-wan.jpg" alt="">
+                    <p id="obi">120</p>
+                </div>
+
+                <div class="pic-div pics" data-name="luke">
+                    <img class="resim" src="./assets/images/luke-skywalker.jpg" alt="">
+                    <p id="luke">100</p>
+                </div>
+
+                <div class="pic-div pics" data-name="sidious">
+                    <img class="resim" src="./assets/images/darth-sidious.png" alt="">
+                    <p id="sidious">150</p>
+                </div>
+
+                <div class="pic-div pics" data-name="maul">
+                    <img class="resim" src="./assets/images/darth-maul.jpg" alt="">
+                    <p id="maul">180</p>
+                </div>
+            </div>
+            <div class="col">
+                <h3 id="command">Choose Your Character!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mid-col">
+                <div class="abs"></div>
+                <h4 id="left" style="display: none;">Your Character</h4>
+                <div class="player-place"></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center mid-place">
+                <button type="button" class="atak-btn btn btn-danger" style="display: none;">Attack</button>
+                <button type="button" class="reset-btn btn btn-primary" style="display: none;">Restart</button>
+                <br>
+                <br>
+                <hr>
+                <div style="display: none;" class="pBack">
+                    <p id="damage1"></p>
+                    <p id="damage2"></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 mid-col">
+                <h4 id="right" style="display: none;">Defender</h4>
+                <div class="rival-place"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
